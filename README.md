@@ -1,50 +1,73 @@
-# Welcome to your Expo app 👋
+# Meeting - Aplicativo Móvel para Cadastro de Fornecedores
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+<center><img src="https://github.com/wueliton/cadastro-fornecedores/blob/main/assets/images/splash.png?raw=true" width="400" /></center>
 
-## Get started
+## Contextualização
 
-1. Install dependencies
+O projeto Meeting tem como objetivo desenvolver um aplicativo móvel eficiente para o cadastro de fornecedores. Focado em proporcionar uma excelente experiência ao usuário e economizar recursos, o app utilizará React Native para estabelecer uma forte presença no mercado móvel. Este repositório contém o código e a documentação necessários para entender e contribuir para o desenvolvimento deste projeto.
 
-   ```bash
-   npm install
-   ```
+## Screenshots
 
-2. Start the app
+|                                                                                 Tela inicial                                                                                 |                                                                            Detalhes do Fornecedor                                                                            |                                                                              Editar Fornecedor                                                                               |                                                                               Criar Fornecedor                                                                               |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| <img src="https://github.com/wueliton/cadastro-fornecedores/blob/main/screenshots/Simulator%20Screenshot%20-%20iPhone%2016%20-%202024-09-22%20at%2013.41.14.png?raw=true" /> | <img src="https://github.com/wueliton/cadastro-fornecedores/blob/main/screenshots/Simulator%20Screenshot%20-%20iPhone%2016%20-%202024-09-22%20at%2013.41.17.png?raw=true" /> | <img src="https://github.com/wueliton/cadastro-fornecedores/blob/main/screenshots/Simulator%20Screenshot%20-%20iPhone%2016%20-%202024-09-22%20at%2013.41.20.png?raw=true" /> | <img src="https://github.com/wueliton/cadastro-fornecedores/blob/main/screenshots/Simulator%20Screenshot%20-%20iPhone%2016%20-%202024-09-22%20at%2013.41.27.png?raw=true" /> |
 
-   ```bash
-    npx expo start
-   ```
+|                                                                              Dados preenchidos                                                                               |                                                                              Fornecedor Criado                                                                               |                                                                               Buscar por nome                                                                                |                                                                                Busca Avançada                                                                                |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| <img src="https://github.com/wueliton/cadastro-fornecedores/blob/main/screenshots/Simulator%20Screenshot%20-%20iPhone%2016%20-%202024-09-22%20at%2013.42.24.png?raw=true" /> | <img src="https://github.com/wueliton/cadastro-fornecedores/blob/main/screenshots/Simulator%20Screenshot%20-%20iPhone%2016%20-%202024-09-22%20at%2013.42.28.png?raw=true" /> | <img src="https://github.com/wueliton/cadastro-fornecedores/blob/main/screenshots/Simulator%20Screenshot%20-%20iPhone%2016%20-%202024-09-22%20at%2013.47.50.png?raw=true" /> | <img src="https://github.com/wueliton/cadastro-fornecedores/blob/main/screenshots/Simulator%20Screenshot%20-%20iPhone%2016%20-%202024-09-22%20at%2013.48.10.png?raw=true" /> |
 
-In the output, you'll find options to open the app in a
+## Requisitos Funcionais
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### 1. Cadastro de Fornecedores
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- O aplicativo permitirá o cadastro de fornecedores, onde será possível inserir:
+  - Nome
+  - Endereço
+  - Contato
+  - Categorias de produtos fornecidos
 
-## Get a fresh project
+### 2. Listagem de Fornecedores
 
-When you're ready, run:
+- Os usuários poderão visualizar uma lista de fornecedores cadastrados.
+- O app incluirá opções de pesquisa e filtragem com base em:
+  - Categoria
+  - Localização
+- A lista de fornecedores será apresentada usando componentes como <Text> e <Image>.
 
-```bash
-npm run reset-project
+### 3. Associação de Imagens
+
+- O aplicativo permitirá que os usuários associem imagens aos perfis dos fornecedores.
+- Será possível fazer o upload de logotipos ou fotos relacionadas ao fornecedor, utilizando o componente <Image>.
+
+### 4. Experiência de Usuário Intuitiva
+
+- A interface do aplicativo será projetada para ser intuitiva e fácil de usar.
+- Os usuários poderão navegar, adicionar e editar informações de forma eficiente, utilizando componentes como <Text>, <TextInput>, e <Image>.
+
+## Tecnologias Utilizadas
+
+- React Native: Para o desenvolvimento do aplicativo móvel.
+- Expo: Para facilitar o desenvolvimento e testes no ambiente móvel.
+
+## Instalação
+
+Para executar o projeto localmente, siga os passos abaixo:
+
+1. Clone o repositório:
+
+```
+git clone https://github.com/wueliton/cadastro-fornecedores.git
+cd cadastro-fornecedores
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. Instale as dependências:
 
-## Learn more
+```
+npm install
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+3. Inicie o projeto:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```
+npm start
+```
